@@ -21,6 +21,12 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.stats-container:hover {
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -66,10 +72,42 @@ body {
     text-align: center;
 }
 
+#search-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.search-btn {
+    margin: 1px;
+}
+
+.search-btn {
+    cursor: pointer;
+}
+
 button {
     font-family: 'Cabin';
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+#search-input {
+    border: none;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .stats-container {
+        flex-wrap: wrap;
+    }
+    .search-btn {
+       font-size: 20px;
+    }
+    #search-input {
+        font-size: 20px;
+    }
 }
